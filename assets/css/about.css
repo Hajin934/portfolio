@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    min-height: 45px;
+    background-color: #170202;
+    border-bottom: 1px solid #fff;
+}
+
+header h1 {
+    color: #fff;
+    margin-left: 50px;
+}
+
+header nav {
+    width: 650px;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+header nav ul li {
+    list-style: none;
+    transition: 0.3s ease-in;
+}
+
+header nav ul li:hover, header nav ul li a:hover {
+    color: #fff;
+    transform: scale(1.1);
+}
+
+header nav ul li a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #C7C6C6;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    color: #C7C6C6;
+    background: linear-gradient(#000000, #5F0000);
+    margin: 0;
+    gap: 100px;
+}
+
+main .skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    height: 450px;
+    background-color: #320105;
+    border-radius: 25px;
+    box-shadow: 0px 0px 20px 15px rgba(255, 0, 0, .56);
+}
+
+main .skills .softSkills, main .skills .hardSkills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+    margin-top: 10px;
+}
+
+main .skills div .skillList ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .skills div .skillList ul li {
+    list-style-type: none;
+}
+
+main .line {
+    width: 3px;
+    height: 390px;
+    background-color: #fff;
+}
+
+main .descriptions {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    gap: 20px;
+}
+
+main .descriptions h1 {
+    font-size: 46px;
+}
+
+main .descriptions p {
+    font-size: 22px;
+}
+
+main .descriptions #details {
+    margin-top: -10px;
+    padding-left: 25px;
+}
+
+main .descriptions .proofs {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+main .descriptions .proofs .proof {
+    width: 150px;
+    height: 100px;
+    margin-top: 10px;
+    background-color: #320105;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px 15px rgba(255, 0, 0, .46);
+}
